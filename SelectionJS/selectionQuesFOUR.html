@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D3 Selection Question </title>
+</head>
+<script>
+  function myfunction(){
+    let Status = document.getElementById("memeber").value;
+    let BookNumber = document.getElementById("number").value;
+    let loanWeeks;
+  if(status = "Student" && BookNumber == 0)
+    loanWeeks = 6;
+  if(status = "Student" && BookNumber < 3)
+    loanWeeks = 4;
+  if(status = "Student" && BookNumber >=3)
+  loanWeeks = 2;
+  if (status = "Faculty" && BookNumber == 0)
+  loanWeeks = 12;
+  if(status = "Faculty" && BookNumber < 3)
+  loanWeeks = 10;
+  if(status = "Faculty" && BookNumber >= 3)
+  loanWeeks = 8;
+  if(status = "Other" && BookNumber == 0)
+  loanWeeks = 4;
+  if(status = "Other" && BookNumber < 3)
+  loanWeeks = 3;
+  if(status = "Other" && BookNumber > 3)
+  loanWeeks = 2;
+  document.getElementById("answer").innerHTML = ("University Staff Memeber that Borrow Books: " + loanWeeks + " Weeks");
+   }
+</script>
+<body>
+<h3><strong> University library that loans book </strong></h3>
+Enter Your Status <input type="text" id="memeber" placeholder="Student,Faculty or Other"><br>
+Enter Number of Books <input type="text" id="number" placeholder="Number of Books"><br><br>
+<button type="button" onclick="myfunction()"> Duration that a Person Borrow Books </button><br><br>
+<div id="answer"></div>
+</body>
+</html>

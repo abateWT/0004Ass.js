@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D3 SelectionQuestion </title>
+</head>
+<script>
+function myfunction(){
+ let completedCredits = document.getElementById("credits").value;
+ let message;
+ if(completedCredits>0 && completedCredits < 30){
+ message = "Freshman";
+  } else if(completedCredits >=30 && completedCredits < 60){
+ message = "Sophomore";
+   } else if(completedCredits >= 60 && completedCredits < 90){
+message = "Junior";
+   } else if(completedCredits >= 90){
+message = "Senior";
+   }
+document.getElementById("answer").innerHTML = ("Your Status is: " + message);
+}
+</script>
+<body>
+<h3><strong> Student's name and number of completed credits </strong></h3>
+Enter Your completed credits <input type="text" id="credits" placeholder=">0,30,60 or 90"><br>
+<button type="button" onclick="myfunction()"> Your Status </button><br><br>
+<div id="answer"></div>
+</body>
+</html>

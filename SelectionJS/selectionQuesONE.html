@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D3 FootWear Question </title>
+</head>
+<script>
+function myfunction(){
+    let input = (document.getElementById("weather").value);
+    let message;
+    if(input == "hot"){
+     message = "Sandals";
+    } else if(input == "rain"){
+     message = "Galoshes";
+    } else if(input == "snow"){
+     message = "Boots"
+    } else
+    message = "Snikers";
+    document.getElementById("answer").innerHTML = ("Your Choice of Shoes is: " + message);
+  }
+</script>
+<body>
+<h3><strong>The correct footwear for the day’s weather</strong></h3>
+Enter the weather of the day’s <input type="text" id="weather" placeholder="hot,rain,snow or any weather types of the day’s"><br><br>
+<button type="button" onclick="myfunction()"> Analysis </button><br><br>
+<div id="answer"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> W1D3 Selection Question </title>
+</head>
+<script>
+function myfunction(){
+    let Age = document.getElementById("ages").value;
+    let Season = document.getElementById("seasons").value;
+    let bedTime;
+     if(Age <= 5)
+     if(Season = "summer" || "fall")
+      bedTime = "8:30 pm";
+     if(Age <= 5)
+     if(Season = "winter" || "spring")
+     bedTime = "8:00 pm";
+     if(Age > 6 && Age < 12)
+      if(Season = "summer")
+     bedTime =="9:30 pm";
+     if(Age > 6 && Age < 12)
+     if(Season = "winter" ||"spring" || "fall")
+     bedTime = "8:30 pm";
+     if(Age >= 13)
+     if(Season = "summer")
+     bedTime = "10:30 pm";
+     if(Age >= 13)
+     if(Season = "winter" || "spring" || "fall")
+     bedTime = "9:30 pm"
+document.getElementById("answer").innerHTML = ("Your Child Bed Time is: " + bedTime);
+}
+</script>
+<body>
+<h3><strong> A Child should go to bed</strong></h3>
+Enter Your Age <input type="text" id="ages"><br>
+Enter season of the year <input type="text" id="seasons" placeholder="summer,winter,spring,fall"><br><br>
+<button type="button" onclick="myfunction()"> Bed Time of Your Child </button><br><br>
+<div id="answer"></div>
+</body>
+</html>
